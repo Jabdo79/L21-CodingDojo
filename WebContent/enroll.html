@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grant Chirpus' Code Dojo</title>
+</head>
+<body>
+
+<form name="form" action="register.jsp" method="post" onsubmit="return checkForm()"><p>
+  <label>
+    <input type="radio" name="Classes" value="Java Bootcamp" required>
+    Java Bootcamp</label>
+  <br>
+  <label>
+    <input type="radio" name="Classes" value="Javascript Bootcamp" required>
+    JavaScript Bootcamp</label>
+  <br>
+  <label>
+    <input type="radio" name="Classes" value="Sql Bootcamp" required>
+    SQL Bootcamp</label>
+  <br>
+</p>
+First Name: <input type="text" name="firstName" id="firstName" required/>
+<br />
+Last Name: <input type="text" name="lastName" id="lastName" required/>
+<br />
+Phone Number: <input type="tel" name="phone" id="phone" required/>
+<br />
+Email: <input type="email" name="email" id="email" required/>
+<br />
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+<script src="validator.js"></script>
+</body>
+</html>
