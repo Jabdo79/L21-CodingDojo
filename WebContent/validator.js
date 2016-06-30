@@ -4,10 +4,7 @@
 
 function checkForm(){
 	//window.alert("test");
-	if(checkName("firstName", "first name") && checkName("lastName", "last name") && checkPhone() && checkEmail() && checkBootcamp())
-		return true;
-	
-	return false;
+	return (checkName("firstName", "first name") && checkName("lastName", "last name") && checkPhone() && checkEmail() && checkBootcamp())
 	
 }
 
@@ -50,7 +47,6 @@ function checkPhone(){
 
 function checkEmail(){
 	var email = document.getElementById("email").value;
-	email.match(/[a-z,@,.]/i);
 	var atPos = email.indexOf("@");
 	var secondAt = email.indexOf("@", atPos+1);
 	var dot = email.indexOf(".", atPos+2);
